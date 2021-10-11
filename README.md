@@ -2,7 +2,7 @@
 
 This repository contains a jupyter notebook describing my experiments on the public stackoverflow questions/answers dataset.
 
-My "simple" solution is based on a tf-idf on question titles and contents on a vocabulary of 18 000 words followed by dimensionality reduction (size 100). Cosine similarity is computed between test and train questions and respondents to the 200 closest train questions are assigned to each test question, weighted on the similarity scores. It is sufficient to assign 20 users by question. I also suggested to try to replace tf-idf by a sentence transformers models, and wrote some potential advantages and drawbacks. The crossval metrics are the following:
+My "simple" solution is based on a tf-idf on question titles and contents on a vocabulary of 18 000 words followed by dimensionality reduction (size 100). Cosine similarity is computed between test and train questions and respondents to the 200 closest train questions are assigned to each test question, weighted on the similarity scores. It is sufficient to assign 20 users by question. I also suggested to try to replace tf-idf by a sentence transformers model, and wrote some potential advantages and drawbacks. The crossval metrics are the following:
 
 <b>precision@1</b>: 0.040229111210084205 (approx. 4% of train questions have found a respondent in the top 1 predictions)</br>
 <b>precision@5</b>: 0.01950345427615565 (approx. 10% of train questions have found a respondent in the top 5 predictions)</br>
