@@ -36,3 +36,5 @@ I suggested further experiments, such as taking user features into account (Abou
 - pyspark==3.1.2
 
 The notebook also needs to set up spark on the device.
+
+Another version of the submissions is available [here](https://drive.google.com/file/d/1GSBXA5DXhTJokBFHDE2dnI2NyPo07DOI/view?usp=sharing).
