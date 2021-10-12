@@ -19,3 +19,20 @@ I tried to enhance it with a collaborative filtering algorithm (ALS from pyspark
 Besides, what could explain this disappointing result is I also strguggled with pyspark cross-validation on this ALS model, the training time being very long, and chose a model with no regularization and 30 hidden features because I had the impression the model underfit the train data but I did not want the model to train for too long if too many hidden features were set.
 
 I suggested further experiments, such as taking user features into account (About me section, reputation, up_votes, down_votes) and training a linear merger (like Logistic Regression) on those features coupled with features from the "simple" solution, or replace tf-idf by a sentence transformers model. I hope to have time to try those improvement ideas soon.
+
+<b>Environment</b>: Python 3.8
+
+<b>Required packages</b>:</br>
+- pandas==1.3.3
+- numpy==1.20.3
+- tqdm==4.62.3
+- nltk==3.6.3
+- bs4==0.0.1
+- sklearn==0.0
+- sentence_transformers==2.1.0
+- scipy==1.7.1
+- hnswlib==0.5.2
+- findspark==1.4.2
+- pyspark==3.1.2
+
+The notebook also needs to set up spark on the device.
