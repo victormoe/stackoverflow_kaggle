@@ -16,7 +16,7 @@ I tried to enhance it with a collaborative filtering algorithm (ALS from pyspark
 <b>precision@20</b>: 0.0005237863424031819</br>
 <b>mean_reciprocal_rank</b> (approximated): 0.003661054235073217
 
-Besides, what could explain this disappointing result is I also strguggled with pyspark cross-validation on this ALS model, the training time being very long, and chose a model with no regularization and 30 hidden features because I had the impression the model underfit the train data but I did not want the model to train for too long if too many hidden features were set.
+Besides, what could explain this disappointing result is I also struggled with pyspark cross-validation on this ALS model, the training time being very long, and chose a model with no regularization and 30 hidden features because I had the impression the model underfit the train data but I did not want the model to train for too long if too many hidden features were set.
 
 I suggested further experiments, such as taking user features into account (About me section, reputation, up_votes, down_votes) and training a linear merger (like Logistic Regression) on those features coupled with features from the "simple" solution, or replace tf-idf by a sentence transformers model. I hope to have time to try those improvement ideas soon.
 
